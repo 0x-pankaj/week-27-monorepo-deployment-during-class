@@ -32,7 +32,7 @@ jobs:
           context: .
           file: ./docker/Dockerfile.backend
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/todo-app-backend:${{ github.sha }}
+          tags: ${{ secrets.DOCKER_USERNAME }}/todo-app-backend:${{ github.sha }}
 
       # - name: Deploy to the VM
       #   run: |
